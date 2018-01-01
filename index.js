@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 const _ = require('lodash');
 const ts = require('./lib/tinyspeck.js');
@@ -15,20 +15,20 @@ slack.on('/parrot', payload => {
   });
   
   const message = { 
-    "response_type": "in_channel", 
+    response_type: 'in_channel', 
     channel: channel_id,
-    text: `Creating pairs from:\n ${payload.text}`,
+    text: `Creating pairs from: ${payload.text}`,
     attachments: [
-      { text:  pairsText.join('\n'), "mrkdwn_in": ['text'] }
+      { text:  pairsText.join('\n'), 'mrkdwn_in': ['text'] }
     ]
   };
   
-  console.log("Received 'parrot' command", payload, pairOptions, pairsText, message);
+  console.log('Received /parrot command', payload, pairOptions, pairsText, message);
   
   slack.send(response_url, message).then(res => {
-    console.log("Response sent to slash command");
+    console.log('Response sent to slash command');
   }, error => {
-    console.log("An error occurred when responding to slash command: " + error);
+    console.log('An error occurred when responding to slash command: ' + error);
   });
 });
 

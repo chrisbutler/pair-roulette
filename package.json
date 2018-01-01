@@ -1,0 +1,16 @@
+{
+  "name": "pair-roulette",
+  "version": "0.1.0",
+  "description": "Simple pair-programming team assignments",
+  "author": "Chris Butler <chris@platformthirteen.com>",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^0.13.1",
+    "ws": "^1.1.1",
+    "request": "2.72.0",
+    "httpdispatcher": "*",
+    "lodash": "^4.17.4"
+  }
+}

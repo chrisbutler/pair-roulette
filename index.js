@@ -4,7 +4,7 @@ const _ = require('lodash');
 const ts = require('./lib/tinyspeck.js');
 const slack = ts.instance({});
 
-slack.on('/parrot', payload => {
+slack.on('/pairis', payload => {
   const { user_id, response_url, channel_id } = payload;
   
   const list = payload.text.split(' ')
@@ -15,7 +15,7 @@ slack.on('/parrot', payload => {
   });
   
   const message = { 
-    response_type: 'in_channel', 
+    response_type: 'in_channel',
     channel: channel_id,
     text: `Creating pairs from: ${payload.text}`,
     attachments: [

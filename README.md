@@ -1,4 +1,4 @@
-# Pair Roulette
+# Pairis
 Simple pair-programming team assignments
 
 ### Slack Usage

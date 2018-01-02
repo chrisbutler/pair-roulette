@@ -1,6 +1,9 @@
 # pairis
 Tells you who your pair is
 
+<img alt="pairis demo" src="https://user-images.githubusercontent.com/112371/34472410-f48f4ee8-ef2f-11e7-9075-3a50bc2b5920.png">
+
+
 ### Setup
 Add a [Slash Command](https://api.slack.com/slash-commands) for `/pairis` to Slack
 

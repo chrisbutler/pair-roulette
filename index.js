@@ -23,7 +23,7 @@ slack.on('/pairis', payload => {
     ]
   };
   
-  console.log('Received /parrot command', payload, pairOptions, pairsText, message);
+  console.log('Received /pairis command', payload, pairOptions, pairsText, message);
   
   slack.send(response_url, message).then(res => {
     console.log('Response sent to slash command');

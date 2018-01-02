@@ -11,7 +11,7 @@ slack.on('/pairis', payload => {
   const pairOptions = _.chain(list).shuffle().chunk(2).value();
 
   const pairsText = _.map(pairOptions, pair => {
-    return pair[1] ? `*${_.capitalize(pair[0])}* pairs with *${_.capitalize(pair[1])}*` : `*${_.capitalize(pair[0])}* is unpaired`;
+    return pair[1] ? `*${_.capitalize(pair[0])}'s* pair is *${_.capitalize(pair[1])}*` : `*${_.capitalize(pair[0])}* goes to Paris...`;
   });
 
   const message = {

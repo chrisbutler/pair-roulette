@@ -5,7 +5,7 @@ Tells you who your pair is
 
 
 ### Setup
-Add a [Slash Command](https://api.slack.com/slash-commands) for `/pairis` to Slack
+Add a `/pairis` [Slash Command](https://api.slack.com/slash-commands) to Slack pointing to `https://api.pairis.me`
 
 ### Slack Usage
 Use the slash command by typing `/paris` followed by a whitespace-delimited list of names
